@@ -10,7 +10,7 @@ namespace Entity
 
         private void FixedUpdate()
         {
-            Vector3 targetDirection = new Vector3(entityController.faceDirection.x, 0, entityController.faceDirection.y);
+            Vector3 targetDirection = entityController.GetWorldFaceDirection();
             Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
             transform.rotation =
                 Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);

@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 namespace Entity
 {
-    public class PlayerController : EntityController, PlayerActions.IDefaultActions
+    public class InputController : EntityController, PlayerActions.IDefaultActions
     {
         public Transform mainCamera;
     
@@ -29,6 +29,20 @@ namespace Entity
             var inputDirection = context.ReadValue<Vector2>();
             Vector3 realDirection = inputDirection.y * mainCamera.forward + inputDirection.x * mainCamera.right;
             movementDirection = (new Vector2(realDirection.x, realDirection.z)).normalized;
+        }
+
+        public void OnSprint(InputAction.CallbackContext context)
+        {
+            if (context.ReadValueAsButton())
+            {
+                isSprinting = true;
+                Debug.Log("Started Sprinting");
+            }
+            else
+            {
+                isSprinting = false;
+                Debug.Log("Stopped Sprinting");
+            }
         }
 
         private void Update()
