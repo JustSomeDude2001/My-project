@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class FPSInput : MonoBehaviour
 {
+    public CharacterController characterController;
+    
     public float speed = 5;
     private void Update()
     {
@@ -41,6 +43,6 @@ public class FPSInput : MonoBehaviour
 
         Vector3 deltaPos = velocity * Time.deltaTime;
 
-        transform.position += deltaPos;
+        characterController.Move(deltaPos);
     }
 }

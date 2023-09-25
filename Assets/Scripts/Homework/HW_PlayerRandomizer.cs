@@ -33,7 +33,7 @@ public class HW_PlayerRandomizer : MonoBehaviour
             newPos.y = (float) _random.NextDouble();
             newPos.z = (float) _random.NextDouble();
             
-            player.position = newPos;
+            player.transform.position = newPos;
             player.updateHealth(-(_random.Next() % 100));
         }
     }

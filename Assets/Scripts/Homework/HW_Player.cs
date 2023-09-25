@@ -5,13 +5,13 @@ using UnityEngine.Serialization;
 
 public class HW_Player : MonoBehaviour
 {
-    public Vector3 position;
-    private int _health;
+    [SerializeField] private int health;
 
     public void updateHealth(int delta)
     {
-        _health += delta;
-        if (_health <= 0)
+        health += delta;
+        Debug.Log("Health changed to " + health);
+        if (health <= 0)
         {
             Debug.Log("player died");
         }
