@@ -35,6 +35,15 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""sprint"",
+                    ""type"": ""Button"",
+                    ""id"": ""966e7939-f6ff-4c8a-bad5-db1c64c11620"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -92,6 +101,17 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                     ""action"": ""move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""73349025-7126-4348-a432-54dada180d89"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -101,6 +121,7 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
         // Default
         m_Default = asset.FindActionMap("Default", throwIfNotFound: true);
         m_Default_move = m_Default.FindAction("move", throwIfNotFound: true);
+        m_Default_sprint = m_Default.FindAction("sprint", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -161,11 +182,13 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Default;
     private IDefaultActions m_DefaultActionsCallbackInterface;
     private readonly InputAction m_Default_move;
+    private readonly InputAction m_Default_sprint;
     public struct DefaultActions
     {
         private @PlayerActions m_Wrapper;
         public DefaultActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @move => m_Wrapper.m_Default_move;
+        public InputAction @sprint => m_Wrapper.m_Default_sprint;
         public InputActionMap Get() { return m_Wrapper.m_Default; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -178,6 +201,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @move.started -= m_Wrapper.m_DefaultActionsCallbackInterface.OnMove;
                 @move.performed -= m_Wrapper.m_DefaultActionsCallbackInterface.OnMove;
                 @move.canceled -= m_Wrapper.m_DefaultActionsCallbackInterface.OnMove;
+                @sprint.started -= m_Wrapper.m_DefaultActionsCallbackInterface.OnSprint;
+                @sprint.performed -= m_Wrapper.m_DefaultActionsCallbackInterface.OnSprint;
+                @sprint.canceled -= m_Wrapper.m_DefaultActionsCallbackInterface.OnSprint;
             }
             m_Wrapper.m_DefaultActionsCallbackInterface = instance;
             if (instance != null)
@@ -185,6 +211,9 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
                 @move.started += instance.OnMove;
                 @move.performed += instance.OnMove;
                 @move.canceled += instance.OnMove;
+                @sprint.started += instance.OnSprint;
+                @sprint.performed += instance.OnSprint;
+                @sprint.canceled += instance.OnSprint;
             }
         }
     }
@@ -192,5 +221,6 @@ public partial class @PlayerActions : IInputActionCollection2, IDisposable
     public interface IDefaultActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnSprint(InputAction.CallbackContext context);
     }
 }

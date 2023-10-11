@@ -15,8 +15,7 @@ namespace Entity
         {
             float fDeltaTime = Time.fixedDeltaTime;
 
-            Vector3 realDirection =
-                new Vector3(entityController.movementDirection.x, 0, entityController.movementDirection.y);
+            Vector3 realDirection = entityController.GetWorldMovementDirection();
 
             Vector3 deltaVelocity = realDirection * (acceleration * fDeltaTime);
         
