@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.03
+  m_FogDensity: 0.15
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -728,7 +728,8 @@ MonoBehaviour:
   chunkDimensions: {x: 10, y: 10}
   player: {fileID: 1917597314}
   baseChunk: {fileID: 3289788123354637641, guid: c828cb2d36bf077119a8ad3566e17b5a, type: 3}
-  generationRadius: 3
+  generationRadius: 2
+  removalRadius: 3
 --- !u!1 &1495816629
 GameObject:
   m_ObjectHideFlags: 3
@@ -1540,7 +1541,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057772194}
-  m_LocalRotation: {x: 0.34042528, y: -1e-45, z: 1e-45, w: 0.9402716}
+  m_LocalRotation: {x: 0.34042525, y: -1e-45, z: 1e-45, w: 0.9402716}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

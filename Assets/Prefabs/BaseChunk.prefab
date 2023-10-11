@@ -147,6 +147,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (1)
@@ -209,6 +213,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (2)
@@ -271,6 +279,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner
@@ -333,6 +345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (6)
@@ -395,6 +411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -2884022688754883656, guid: 3109b604ec9484917bb429768304b82d, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1691813703855820995, guid: 3109b604ec9484917bb429768304b82d, type: 3}
       propertyPath: m_Name
       value: fireflySpawner
@@ -457,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (3)
@@ -519,6 +543,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (5)
@@ -581,6 +609,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (4)
@@ -643,6 +675,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -8717805337575105366, guid: 9609c6a75b4ec61ba975d4fb9c2ea7ac, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5914104143878960350, guid: 9609c6a75b4ec61ba975d4fb9c2ea7ac, type: 3}
       propertyPath: m_Name
       value: wyrmSpawner
@@ -705,6 +741,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3289788123354637640}
     m_Modifications:
+    - target: {fileID: -3951690749332007354, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
+      propertyPath: isChunkBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3606898032141702785, guid: cd8f03ecfadb74a84b46dcb2c4e3ab33, type: 3}
       propertyPath: m_Name
       value: wallSpawner (7)

@@ -41,5 +41,20 @@ namespace World
                 Debug.Log("Failed to add chunk " + chunk + ", as it is already present");
             }
         }
+
+        public void RemoveChunk(Tuple<int, int> chunk)
+        {
+            if (!HasChunk(chunk))
+            {
+                Debug.Log("Failed to delete chunk " + chunk);
+            }
+            else
+            {
+                Transform target;
+                Chunks.Remove(chunk, out target);
+                Destroy(target.gameObject);
+                Debug.Log("Successfully removed chunk" + chunk);
+            }
+        }
     }
 }
