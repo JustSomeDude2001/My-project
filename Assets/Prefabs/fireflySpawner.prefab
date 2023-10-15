@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8544442646199391486}
-  - component: {fileID: -2884022688754883656}
+  - component: {fileID: 5747832189399855023}
   m_Layer: 0
   m_Name: fireflySpawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2884022688754883656
+--- !u!114 &5747832189399855023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1691813703855820995}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f650310287fbe1195a8e19a9849e0632, type: 3}
+  m_Script: {fileID: 11500000, guid: 0632027a77ac4182af0e201de0e83290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 8186604542783429469, guid: 671200eb878862c92b01b53bd2a61b46, type: 3}
-  chanceToSpawn: 0.1
+  isChunkBound: 1
+  chanceToSpawn: 0.05

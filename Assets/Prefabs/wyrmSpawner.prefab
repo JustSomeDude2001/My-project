@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8122772258207438947}
-  - component: {fileID: -8717805337575105366}
+  - component: {fileID: 7218479088916126435}
   m_Layer: 0
   m_Name: wyrmSpawner
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8717805337575105366
+--- !u!114 &7218479088916126435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,8 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5914104143878960350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f650310287fbe1195a8e19a9849e0632, type: 3}
+  m_Script: {fileID: 11500000, guid: 0632027a77ac4182af0e201de0e83290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameObject: {fileID: 895828073694588591, guid: 91bbd423d15d804918bf02fd03a810c9, type: 3}
-  chanceToSpawn: 0.1
+  isChunkBound: 1
+  chanceToSpawn: 0.01
