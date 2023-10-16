@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5650353926708348819}
   - component: {fileID: 1119539628885432877}
   - component: {fileID: 3717387790376242011}
+  - component: {fileID: 1467409026977487207}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -56,7 +57,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4551020118627867893}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -131,7 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterController: {fileID: 4551020118627867899}
   camera: {fileID: 0}
-  speed: 500
+  speed: 250
 --- !u!114 &4551020118627867898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,3 +205,17 @@ MonoBehaviour:
   controller: {fileID: 0}
   jumpHeight: 1
   gravityValue: -9.81
+--- !u!114 &1467409026977487207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551020118627867893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8abb1a665f55f425bbe5c32eab9c2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 4551020118627867889}
+  crouchingSize: {x: 1, y: 0.5, z: 1}

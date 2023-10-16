@@ -41,6 +41,10 @@ public class FPSInput : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             velocity *= 2;
+        } 
+        else if (Input.GetKey(KeyCode.C))
+        {
+            velocity *= 0.3f;
         }
 
         Vector3 deltaPos = velocity * Time.deltaTime;
