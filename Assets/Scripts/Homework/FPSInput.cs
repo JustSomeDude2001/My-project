@@ -6,6 +6,8 @@ using UnityEngine;
 public class FPSInput : MonoBehaviour
 {
     public CharacterController characterController;
+
+    public Camera camera;
     
     public float speed = 5;
     private void Update()
@@ -13,22 +15,22 @@ public class FPSInput : MonoBehaviour
         Vector3 direction = new Vector3(0, 0, 0);
         if (Input.GetKey(KeyCode.W))
         {
-            direction += transform.forward;
+            direction += camera.transform.forward;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            direction += -transform.right;
+            direction += -camera.transform.right;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            direction += transform.right;
+            direction += camera.transform.right;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            direction += -transform.forward;
+            direction += -camera.transform.forward;
         }
 
         direction.y = 0;
@@ -43,6 +45,6 @@ public class FPSInput : MonoBehaviour
 
         Vector3 deltaPos = velocity * Time.deltaTime;
 
-        characterController.Move(deltaPos);
+        characterController.SimpleMove(deltaPos);
     }
 }
