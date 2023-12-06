@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1010129157322769688}
   - component: {fileID: 3996220904153588022}
   - component: {fileID: 2869133799334499810}
+  - component: {fileID: 8741360011759227643}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -101,6 +102,19 @@ MonoBehaviour:
   rotationPoint: {fileID: 7402982077602263243}
   rotationAxis: {x: 0, y: 1, z: 0}
   speed: 200
+--- !u!114 &8741360011759227643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4651633169002585930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085a98d05ef4a068f324c6293c3ec22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newObject: {fileID: 7386205665170129020, guid: a13e8c8ccfecefa6d94ccb37044dd7d4, type: 3}
 --- !u!1 &5284519839752442529
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rechargeRate: 100
+  chargersCount: 0
 --- !u!1 &5528528741534500928
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +318,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6982438578807101262}
+  - component: {fileID: 4628066596181844503}
+  - component: {fileID: 1204839439037553405}
   m_Layer: 0
   m_Name: firefly
   m_TagString: Untagged
@@ -327,3 +344,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4628066596181844503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186604542783429469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3757ff12d08f49c4b5628ce77f70cd44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyChanger: {fileID: 3578308549063872447}
+  moneyDistributor: {fileID: 1204839439037553405}
+  cooldown: 0.3
+  destructionChance: 0.15
+--- !u!114 &1204839439037553405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186604542783429469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718b8ac1d46a4b3f98dc66d5609a668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value: 1
+  destroyedByPlayer: 0
