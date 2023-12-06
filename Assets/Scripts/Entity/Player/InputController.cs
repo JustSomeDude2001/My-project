@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Entity
+namespace Entity.Player
 {
     public class InputController : EntityController, PlayerActions.IDefaultActions
     {
