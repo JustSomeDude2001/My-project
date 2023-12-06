@@ -373,6 +373,8 @@ GameObject:
   - component: {fileID: 2518726459324205008}
   - component: {fileID: 2518726459324205009}
   - component: {fileID: 2518726459324205021}
+  - component: {fileID: 7574966047554682565}
+  - component: {fileID: 3217766160420663638}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -477,6 +479,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowedState: 2
+--- !u!225 &7574966047554682565
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518726459324205014}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &3217766160420663638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2518726459324205014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e0674d451924bdd85846444826e5a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 7574966047554682565}
+  rate: 0.25
 --- !u!1 &2518726460161875480
 GameObject:
   m_ObjectHideFlags: 0

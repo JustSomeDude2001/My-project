@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newObject: {fileID: 7386205665170129020, guid: a13e8c8ccfecefa6d94ccb37044dd7d4, type: 3}
+  allowedGameState: 1
 --- !u!1 &5284519839752442529
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ namespace Game
     {
         NewGame,
         Ongoing,
-        Dead
+        Dead,
+        Victory
     }
 }

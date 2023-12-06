@@ -19,6 +19,7 @@ namespace Game
 
         public GameObject gameInstance;
         public GameObject shopInstance;
+        public GameObject victoryInstance;
         
         private void Start()
         {
@@ -41,6 +42,10 @@ namespace Game
                     case GameState.Dead:
                         Debug.Log("Died. Loading shop");
                         Instantiate(shopInstance, Vector3.zero, Quaternion.identity);
+                        break;
+                    case GameState.Victory:
+                        Debug.Log("Game is won.");
+                        Instantiate(victoryInstance, Vector3.zero, Quaternion.identity);
                         break;
                     default:
                         break;

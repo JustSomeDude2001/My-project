@@ -46,4 +46,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 5910982987648326575, guid: 4d4d4548dc31a4e23a56071cb0ca8aa6, type: 3}
   isChunkBound: 1
-  chanceToSpawn: 0.35
+  chanceToSpawn: 0.2

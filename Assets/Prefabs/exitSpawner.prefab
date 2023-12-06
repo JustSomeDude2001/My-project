@@ -46,5 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameObject: {fileID: 4384133639507848057, guid: 3bfdd02220cee449b813ce3f8449e3a5, type: 3}
   isChunkBound: 1
-  chanceToSpawn: 0.025
+  chanceToSpawn: 0.01
   upgradeName: Exit
