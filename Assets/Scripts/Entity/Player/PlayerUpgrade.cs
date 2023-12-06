@@ -19,5 +19,7 @@ namespace Entity.Player
 
         public float deltaEnergyOffset;
         public float deltaEnergyMult;
+
+        public string unlockedSpawn;
     }
 }

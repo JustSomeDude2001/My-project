@@ -1,5 +1,6 @@
 using Entity.Energy;
 using UnityEngine;
+using World;
 
 namespace Entity.Player
 {
@@ -17,7 +18,8 @@ namespace Entity.Player
         public Energy.Energy energy;
         public Movement movement;
         public EnergyChange energyChange;
-
+        
+        
         public void ResetStats()
         {
             _movementSpeed = 0;
@@ -40,6 +42,11 @@ namespace Entity.Player
 
             _deltaEnergy += upgrade.deltaEnergyOffset;
             _deltaEnergyMult += upgrade.deltaEnergyMult;
+
+            if (upgrade.unlockedSpawn != "")
+            {
+                UpgradeBoundSpawner.isAllowed[upgrade.unlockedSpawn] = true;
+            }
         }
 
         public void ApplyStats()
