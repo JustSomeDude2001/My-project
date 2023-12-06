@@ -6,6 +6,8 @@ namespace Entity.Player
     [CreateAssetMenu(fileName = "upgradeData", menuName = "ScriptableObjects/PlayerUpgrade")]
     public class PlayerUpgrade : ScriptableObject
     {
+        public bool repeatable = true;
+        
         public string upgradeTitle;
         public string description;
 

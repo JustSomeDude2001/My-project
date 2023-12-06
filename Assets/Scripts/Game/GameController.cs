@@ -9,9 +9,9 @@ namespace Game
     {
         public static GameController currentGameController;
         
-        public int money;
+        public int money = 0;
         public List<PlayerUpgrade> activeUpgrades;
-
+        public List<string> upgradeTitles;
         public GameState currentState = GameState.NewGame;
         public GameState nextState = GameState.Ongoing;
 

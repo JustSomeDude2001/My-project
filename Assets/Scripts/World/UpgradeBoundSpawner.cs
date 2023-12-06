@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 
 namespace World
@@ -11,7 +12,7 @@ namespace World
         
         private void Start()
         {
-            if (!isAllowed[upgradeName])
+            if (!isAllowed.Keys.Contains(upgradeName) || !isAllowed[upgradeName])
             {
                 return;
             }

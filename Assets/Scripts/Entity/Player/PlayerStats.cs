@@ -1,4 +1,6 @@
+using System;
 using Entity.Energy;
+using Game;
 using UnityEngine;
 using World;
 
@@ -18,9 +20,18 @@ namespace Entity.Player
         public Energy.Energy energy;
         public Movement movement;
         public EnergyChange energyChange;
-        
-        
-        public void ResetStats()
+
+        private void Start()
+        {
+            ResetStats();
+            for (int i = 0; i < GameController.currentGameController.activeUpgrades.Count; i++)
+            {
+                ApplyUpgrade(GameController.currentGameController.activeUpgrades[i]);
+            }
+            ApplyStats();
+        }
+
+        private void ResetStats()
         {
             _movementSpeed = 0;
             _movementSpeedMult = 1;
@@ -32,7 +43,7 @@ namespace Entity.Player
             _deltaEnergyMult = 1;
         }
         
-        public void ApplyUpgrade(PlayerUpgrade upgrade)
+        private void ApplyUpgrade(PlayerUpgrade upgrade)
         {
             _movementSpeed += upgrade.movementSpeedOffset;
             _movementSpeedMult += upgrade.movementSpeedMult;
@@ -49,7 +60,7 @@ namespace Entity.Player
             }
         }
 
-        public void ApplyStats()
+        private void ApplyStats()
         {
             movement.SetMaxVelocity(_movementSpeed * _movementSpeedMult);
             

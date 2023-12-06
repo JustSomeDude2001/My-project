@@ -12,21 +12,23 @@ namespace Game
         
         public void TryBuyUpgrade()
         {
-            if (GameController.currentGameController.money >= upgrade.cost)
-            {
-                GameController.currentGameController.money -= upgrade.cost;
-                GameController.currentGameController.activeUpgrades.Add(upgrade);
-                
-                Debug.Log("Bought Upgrade");
-                source.Stop();
-                source.clip = successSound;
-                source.Play();
-            }
-            else
+            if (GameController.currentGameController.money < upgrade.cost || (!upgrade.repeatable && GameController.currentGameController.upgradeTitles.Contains(upgrade.upgradeTitle)))
             {
                 Debug.Log("Failed to buy");
                 source.Stop();
                 source.clip = failSound;
+                source.Play();
+            } else {
+                GameController.currentGameController.money -= upgrade.cost;
+                GameController.currentGameController.activeUpgrades.Add(upgrade);
+                if (!GameController.currentGameController.upgradeTitles.Contains(upgrade.upgradeTitle))
+                {
+                    GameController.currentGameController.upgradeTitles.Add(upgrade.upgradeTitle);
+                }
+                
+                Debug.Log("Bought Upgrade");
+                source.Stop();
+                source.clip = successSound;
                 source.Play();
             }
         }

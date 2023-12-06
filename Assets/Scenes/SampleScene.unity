@@ -264,9 +264,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab9a1f8274411c8e73624911261e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  money: 100
   activeUpgrades:
   - {fileID: 11400000, guid: 5b03b94111a05832da53b4d0d6c28b9d, type: 2}
+  upgradeTitles: []
   currentState: 0
   nextState: 0
   gameStartTime: 0

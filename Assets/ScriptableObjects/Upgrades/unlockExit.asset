@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 810af6f56a034fe2b2a9868d01302692, type: 3}
-  m_Name: flameUpgrade
+  m_Name: unlockExit
   m_EditorClassIdentifier: 
-  repeatable: 1
-  upgradeTitle: FlameCapacity
+  repeatable: 0
+  upgradeTitle: UnlockExit
   description: 
-  cost: 5
+  cost: 13
   movementSpeedOffset: 0
   movementSpeedMult: 0
-  maxEnergyOffset: 50
+  maxEnergyOffset: 0
   maxEnergyMult: 0
   deltaEnergyOffset: 0
   deltaEnergyMult: 0
-  unlockedSpawn: 
+  unlockedSpawn: Exit
