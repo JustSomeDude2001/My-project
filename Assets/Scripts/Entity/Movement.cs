@@ -6,11 +6,22 @@ namespace Entity
     {
         public EntityController entityController;
     
-        public float maxVelocity = 3;
-        public float acceleration = 30;
+        [SerializeField] private float maxVelocity = 3;
+        [SerializeField] private float acceleration = 30;
 
         public Rigidbody rigidBody;
 
+        public void SetMaxVelocity(float newMaxV)
+        {
+            maxVelocity = newMaxV;
+            acceleration = maxVelocity * 1.5f;
+        }
+
+        public float GetMaxVelocity()
+        {
+            return maxVelocity;
+        }
+        
         private void FixedUpdate()
         {
             float fDeltaTime = Time.fixedDeltaTime;

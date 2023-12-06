@@ -42,5 +42,15 @@ namespace Entity.Energy
         {
             return maxEnergy;
         }
+
+        public void SetMaxEnergy(float newMax)
+        {
+            maxEnergy = newMax;
+        }
+
+        public void SetCurrentEnergy(float newCur)
+        {
+            currentEnergy = newCur;
+        }
     }
 }

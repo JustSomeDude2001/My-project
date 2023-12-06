@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace World
@@ -33,6 +34,7 @@ namespace World
             if (!HasChunk(chunk))
             {
                 GameObject newChunk = Instantiate(chunkObject, ChunkToWorld(chunk), Quaternion.identity);
+                newChunk.transform.SetParent(transform);
                 Chunks.Add(chunk, newChunk.transform);
                 Debug.Log("Generated chunk " + chunk + " successfully");
             }
@@ -54,6 +56,14 @@ namespace World
                 Chunks.Remove(chunk, out target);
                 Destroy(target.gameObject);
                 Debug.Log("Successfully removed chunk" + chunk);
+            }
+        }
+
+        public void ClearWorld()
+        {
+            for (int i = 0; i < Chunks.Keys.Count; i++)
+            {
+                RemoveChunk(Chunks.Keys.ElementAt(i));
             }
         }
     }
